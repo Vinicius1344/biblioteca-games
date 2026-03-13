@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>body { background-color: #121212; color: white; }</style>
+</head>
+<body class="container py-5">
+    <div class="col-md-6 offset-md-3">
+        <h2 class="mb-4 text-warning">Editar Jogo</h2>
+        <form method="POST">
+            <div class="mb-3">
+                <label class="form-label">Nome do Jogo</label>
+                <input type="text" name="nome" value="{{ jogo.nome }}" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Gênero</label>
+                <input type="text" name="genero" value="{{ jogo.genero }}" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Plataforma</label>
+                <input type="text" name="plataforma" value="{{ jogo.plataforma }}" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-warning w-100">Atualizar</button>
+            <a href="/" class="btn btn-link text-white w-100 mt-2">Cancelar</a>
+        </form>
+    </div>
+</body>
+</html>
